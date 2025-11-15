@@ -25,3 +25,5 @@ g2 = spEDM::gccm(heavymetal, "industry", "cu",
                  E = 4, k = 5, style = 0, stack = TRUE,
                  pred = as.matrix(expand.grid(seq(5,125,5), seq(5,130,5))),
                  dist.metric = "L1", dist.average = FALSE, detrend = FALSE)
+
+g3 = spEDM::gpc(heavymetal,"cu","ntl",E = 3, tau = 1, k = 4)
